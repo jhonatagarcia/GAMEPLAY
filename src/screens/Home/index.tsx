@@ -10,12 +10,12 @@ export function Home(){
         <View>
             <View style={styles.header}>
                 <Profile/>
-                <ButtonAdd/>
-
-                <View>
-                    <CategorySelect/>
-                </View>    
+                <ButtonAdd/>  
             </View>
+
+            <View>
+                <CategorySelect/>
+            </View>  
         </View>
     )
 }
