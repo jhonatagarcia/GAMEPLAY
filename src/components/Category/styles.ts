@@ -39,8 +39,8 @@ export const styles = StyleSheet.create({
     },
 
     checked: {
-        width: 12,
-        height: 12,
+        width: 10,
+        height: 10,
         backgroundColor: theme.colors.primary,
         alignSelf: 'flex-end',
         marginRight: 7,
