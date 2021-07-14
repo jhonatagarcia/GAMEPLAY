@@ -32,6 +32,10 @@ export  const styles = StyleSheet.create({
         color: theme.colors.heading
     },
 
+    members: {
+        marginLeft: 24,
+        marginTop: 27
+    }
     
 
 
