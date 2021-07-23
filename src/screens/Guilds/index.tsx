@@ -1,6 +1,6 @@
 import React from 'react';
 import { FlatList, Text, View } from 'react-native';
-import { GuildProps } from '../../components/Appointment';
+import { GuildProps } from '../../components/Guild';
 import { Guild } from '../../components/Guild';
 import { ListDivider } from '../../components/ListDivider';
 import { styles } from './styles';
@@ -16,6 +16,48 @@ export function Guilds({handleGuildSelect}: Props){
             name: 'Lendários',
             icon: 'img.png',
             owner: true
+        },
+
+        {
+            id: '2',
+            name: 'Os tops devs',
+            icon: 'img.png',
+            owner: true
+        },
+
+        {
+            id: '2',
+            name: 'Os tops devs',
+            icon: 'img.png',
+            owner: true
+        },
+
+        {
+            id: '2',
+            name: 'Os tops devs',
+            icon: 'img.png',
+            owner: true
+        },
+
+        {
+            id: '2',
+            name: 'Os tops devs',
+            icon: 'img.png',
+            owner: true
+        },
+
+        {
+            id: '2',
+            name: 'Os tops devs',
+            icon: 'img.png',
+            owner: true
+        },
+
+        {
+            id: '2',
+            name: 'Os tops devs',
+            icon: 'img.png',
+            owner: true
         }
     ];  
 
@@ -23,7 +65,7 @@ export function Guilds({handleGuildSelect}: Props){
         <View>
             <FlatList data={guilds} keyExtractor={item => item.id}
             renderItem={({ item }) => (
-                <Guild data={ item } onPress={() => handleGuildSelect}/>
+                <Guild data={ item } onPress={() => handleGuildSelect(item)}/>
                 )}
                 ItemSeparatorComponent={() => <ListDivider/>}
                 style={styles.guilds}

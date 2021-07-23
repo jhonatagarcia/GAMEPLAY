@@ -3,7 +3,7 @@ import { theme } from '../../global/styles/theme'
 
 export const styles = StyleSheet.create({
     container: {
-       width: '85%',
+       width: '100%',
        flexDirection: 'row',
        alignItems: 'center',
        paddingHorizontal: 24

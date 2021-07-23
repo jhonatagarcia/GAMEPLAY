@@ -13,8 +13,7 @@ import { TextArea } from '../../components/TextArea';
 import { Button } from '../../components/Button';
 import { ModalView } from '../../components/ModalView';
 import { Guilds } from '../Guilds';
-import { Guild } from '../../components/Guild';
-import { GuildProps } from '../../components/Appointment';
+import { GuildProps } from '../../components/Guild';
 
 export function AppointmentCreate(){
     const [ category, setCategory] = useState('');
@@ -25,7 +24,7 @@ export function AppointmentCreate(){
         setOpenGuildsModal(true);
     }
 
-    function hanleGuildSelect(guildSelect: GuildProps){
+    function handleGuildSelect(guildSelect: GuildProps){
         setGuild(guildSelect)
         setOpenGuildsModal(false)
     }
@@ -115,7 +114,7 @@ export function AppointmentCreate(){
             </ScrollView>
 
             <ModalView visible={openGuildsModal}>
-                <Guilds handleGuildSelect={hanleGuildSelect}/>
+                <Guilds handleGuildSelect={handleGuildSelect}/>
             </ModalView>
        </KeyboardAvoidingView>
     )

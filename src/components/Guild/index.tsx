@@ -5,7 +5,7 @@ import { styles } from './styles';
 import { Feather } from '@expo/vector-icons'
 import { theme } from '../../global/styles/theme';
 
-export type GruildProps = {
+export type GuildProps = {
     id: string;
     name: string;
     icon: string | null;
@@ -13,14 +13,14 @@ export type GruildProps = {
 }
 
 type Props = TouchableOpacityProps & {
-    data:  GruildProps;
+    data:  GuildProps;
 }
 
 export function Guild({data, ...rest}: Props){                                                                                                                                                               
     return (
      <TouchableOpacity style={styles.container} activeOpacity={0.7} {...rest}>
          <GuildIcon/>
-         <View style={styles.container}>
+         <View style={styles.content}>
             <View>
                 <Text style={styles.title}>
                     {data.name}
@@ -29,8 +29,7 @@ export function Guild({data, ...rest}: Props){
                 <Text style={styles.type}>
                     {data.owner ? 'Administrador' : 'Convidado'}
                 </Text>
-            </View>
-           
+            </View>       
          </View>
          <Feather name="chevron-right" color={theme.colors.heading} size={24}/>
          
